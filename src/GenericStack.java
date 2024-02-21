@@ -11,7 +11,7 @@ public class GenericStack <T> {
 
     public GenericStack(Object[] stack) {
 
-        if(stack == null) throw new IllegalArgumentException("Stack parameter cant be null!"); // Change to StackEmptyException
+        if(stack == null) throw new StackEmtpyException();
 
         for (Object object : stack) {
             if(object == null) throw new NullPointerException("No object in the stack parameter can be null!");
@@ -29,7 +29,7 @@ public class GenericStack <T> {
     public T peek() {
 
         if (this.stack.length == 0) {
-            throw new IllegalArgumentException(); // -||-
+            throw new StackEmtpyException();
         }
 
         return (T) this.stack[this.stack.length - 1];
@@ -38,7 +38,7 @@ public class GenericStack <T> {
     public void pop() {
 
         if (this.stack.length == 0) {
-            throw new IllegalArgumentException(); // -||-
+            throw new StackEmtpyException();
         }
 
         this.stack = Arrays.copyOf(this.stack, this.stack.length - 1);
