@@ -27,7 +27,21 @@ public class GenericStack <T> {
     }
 
     public T peek() {
+
+        if (this.stack.length == 0) {
+            throw new IllegalArgumentException(); // -||-
+        }
+
         return (T) this.stack[this.stack.length - 1];
+    }
+
+    public void pop() {
+
+        if (this.stack.length == 0) {
+            throw new IllegalArgumentException(); // -||-
+        }
+
+        this.stack = Arrays.copyOf(this.stack, this.stack.length - 1);
     }
 
 }

@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708521574843</updated>
-      <workItem from="1708521575990" duration="2074000" />
+      <workItem from="1708521575990" duration="2268000" />
     </task>
     <task id="LOCAL-00001" summary="Add Constructor with no parameter">
       <created>1708525456092</created>
@@ -76,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708525574740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add peek method for looking up the first element of the stack">
+      <created>1708525710647</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708525710647</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +93,7 @@
     <MESSAGE value="Add Constructor with no parameter" />
     <MESSAGE value="Add Constructor with parameter for a stack" />
     <MESSAGE value="Add push method for pushing an item on top of the stack" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add push method for pushing an item on top of the stack" />
+    <MESSAGE value="Add peek method for looking up the first element of the stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add peek method for looking up the first element of the stack" />
   </component>
 </project>
