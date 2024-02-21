@@ -26,4 +26,8 @@ public class GenericStack <T> {
         this.stack = newStack;
     }
 
+    public T peek() {
+        return (T) this.stack[this.stack.length - 1];
+    }
+
 }
