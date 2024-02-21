@@ -44,4 +44,16 @@ public class GenericStack <T> {
         this.stack = Arrays.copyOf(this.stack, this.stack.length - 1);
     }
 
+    public String list() {
+
+        StringBuilder returnee = new StringBuilder();
+
+        for (Object o : this.stack) {
+            T typeObject = (T) o;
+            returnee.append(typeObject.toString()).append(";");
+        }
+
+        return returnee.toString();
+    }
+
 }
