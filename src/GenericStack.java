@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class GenericStack <T> {
@@ -9,7 +8,7 @@ public class GenericStack <T> {
         this.stack = new Object[0];
     }
 
-    public GenericStack(Object[] stack) {
+    public GenericStack(T[] stack) {
 
         if(stack == null) throw new StackEmtpyException();
 
