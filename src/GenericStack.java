@@ -20,4 +20,10 @@ public class GenericStack <T> {
 
     }
 
+    public void push(T object) {
+        Object[] newStack = Arrays.copyOf(this.stack, this.stack.length + 1);
+        newStack[newStack.length - 1] = object;
+        this.stack = newStack;
+    }
+
 }
