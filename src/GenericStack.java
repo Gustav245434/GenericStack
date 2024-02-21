@@ -3,6 +3,8 @@ import java.util.Arrays;
 /**
  * Generic Stack class for creating a stack with a variable datatype.
  * @param <T> The datatype that the stack uses.
+ * @author Gustav Glatzel
+ * @version 2024-02-21
  */
 public class GenericStack <T> {
 
